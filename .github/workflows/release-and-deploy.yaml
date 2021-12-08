@@ -16,10 +16,10 @@ jobs:
         with:
           host: docker
           username: mcia
-          key: ${{ secrets.MCIA_DOCKER_PRIVATE_KEY }}
+          key: ${{ secrets.DOCKER_PRIVATE_KEY }}
           proxy-host: 'mciawebserver.upc.edu'
           proxy-username: 'mcia'
-          proxy-key: ${{ secrets.MCIA_GATEWAY_PRIVATE_KEY }}
+          proxy-key: ${{ secrets.GATEWAY_PRIVATE_KEY }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           directory: /home/mcia/matlab-license-server
           sources: docker-compose.yaml Dockerfile
