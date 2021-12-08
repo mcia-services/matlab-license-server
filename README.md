@@ -16,7 +16,10 @@ INCREMENT <<License information>>
 # END-----------------END-----------------END
 ```
 
-The `{{}}` placeholders have to fit with the docker-compose configuration
+The `{{}}` placeholders have to fit with the docker-compose configuration. Hostname and mac address had to fit with license.dat config.
+
+Port for lmgrd 27000
+Port for mlm 27001
 
 For further explanation, refer to the [manual](https://www.mathworks.com/matlabcentral/answers/uploaded_files/5871/LicenseAdministration.pdf). `LICENSEDIR` is where you store your license manager. You could easily update the license file without rebuild the Docker image. You might need to restart the Docker container if needed.
 
