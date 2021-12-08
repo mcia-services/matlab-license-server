@@ -14,7 +14,6 @@ FROM ubuntu
 COPY --from=builder /lmgrd /lmgrd
 RUN mkdir /usr/tmp
 ENV LMGRD_PORT=27000
-ENV MLM_PORT=27001
 EXPOSE $LMGRD_PORT
 EXPOSE $MLM_PORT
 

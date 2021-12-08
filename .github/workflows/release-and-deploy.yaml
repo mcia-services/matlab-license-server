@@ -25,4 +25,4 @@ jobs:
           sources: docker-compose.yaml Dockerfile
           tag: latest
           script: |
-            docker-compose up -d
+            docker-compose up --build -d
