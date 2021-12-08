@@ -22,7 +22,7 @@ jobs:
           proxy-username: 'mcia'
           proxy-key: ${{ secrets.GATEWAY_PRIVATE_KEY }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          directory: /home/mcia/matlab-license-server
+          directory: /home/mcia
           sources: docker-compose.yaml Dockerfile
           tag: latest
           script: |
