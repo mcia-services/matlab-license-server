@@ -12,7 +12,6 @@ jobs:
     name: Release and deploy in server
     steps:
       - uses: actions/checkout@main
-      - run: echo ${{ secrets.GITHUB_TOKEN }}
       - uses: mcia-services/release-copy-deploy-action@latest
         with:
           host: docker
